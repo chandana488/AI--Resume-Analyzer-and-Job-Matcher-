@@ -6,15 +6,17 @@ Unlike basic keyword matchers, this system understands the *context* of the text
 
 ## Features
 
-- **Semantic Matching**: Uses `sentence-transformers/all-MiniLM-L6-v2` to compute vector embeddings of both the resume and job description, comparing them with Cosine Similarity.
-- **Skill Gap Analysis**: Extracts technical skills using custom Named Entity Recognition logic and compares them to find matches and gaps.
-- **Explainable AI**: Provides concrete, actionable suggestions on how to improve the resume for the specific job description.
-- **Job Recommendations**: Compares the user's resume against a database of jobs to recommend the best fitting roles.
-- **Modern UI**: Built with React, Vite, and Tailwind CSS for a premium, responsive user experience.
+- Resume upload and processing
+- AI-based resume analysis
+- Job description matching
+- Skill extraction and keyword analysis
+- Resume scoring system
+- REST API using FastAPI
+- CORS-enabled backend for frontend integration
+- Database integration for storing data
+- Modular backend architecture
 
----
-
-## Folder Structure
+## Project Structure
 
 ```
 ai-resume-matcher/
@@ -46,7 +48,7 @@ ai-resume-matcher/
 
 ---
 
-## Local Setup Instructions
+## Installation Instructions
 
 ### 1. Backend Setup (FastAPI & ML)
 
@@ -102,20 +104,27 @@ ai-resume-matcher/
 4. **Skill Extraction**: The text is scanned against a database of technical skills (`skills_db.txt`). It compares the set of skills found in the resume against the job description to calculate gaps.
 
 ---
+## Tech Stack
 
-## Deployment Steps
+- FastAPI
+- Python
+- SQLAlchemy
+- SQLite / PostgreSQL
+- REST APIs
+- CORS Middleware
+- NLP / AI Processing 
 
-### Backend Deployment (Render / Heroku)
-1. Push your code to GitHub.
-2. Create a new Web Service on Render.
-3. Connect your repository.
-4. Set the Build Command to: `pip install -r requirements.txt && python -m spacy download en_core_web_sm`
-5. Set the Start Command to: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+## Running the Application
 
-### Frontend Deployment (Vercel)
-1. Go to Vercel and create a new project.
-2. Connect your GitHub repository.
-3. Set the Root Directory to `frontend`.
-4. Vercel will automatically detect Vite and configure the build settings (`npm run build`).
-5. In Environment Variables, set `VITE_API_URL` to your deployed backend URL.
-6. Click Deploy.
+### Option 1: Start the Application
+
+Run the FastAPI server using:
+
+```bash
+uvicorn main:app --reload
+
+## Option 2: Manual Start
+Step 1: Install Required Packages
+pip install -r requirements.txt
+Step 2: Start locally Server at:
+ http://127.0.0.1:8000
