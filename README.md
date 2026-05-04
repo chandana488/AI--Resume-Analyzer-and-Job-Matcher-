@@ -124,7 +124,9 @@ Run the FastAPI server using:
 uvicorn main:app --reload
 
 ## Option 2: Manual Start
+
 Step 1: Install Required Packages
 pip install -r requirements.txt
+
 Step 2: Start locally Server at:
  http://127.0.0.1:8000
