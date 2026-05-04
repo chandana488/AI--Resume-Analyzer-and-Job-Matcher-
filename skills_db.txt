@@ -1,0 +1,50 @@
+python
+java
+javascript
+typescript
+c++
+c#
+react
+node.js
+fastapi
+flask
+django
+spring boot
+express.js
+machine learning
+deep learning
+nlp
+natural language processing
+computer vision
+sql
+postgresql
+mysql
+mongodb
+redis
+aws
+azure
+gcp
+docker
+kubernetes
+html
+css
+tailwind css
+bootstrap
+spacy
+sentence transformers
+pandas
+numpy
+scikit-learn
+pytorch
+tensorflow
+keras
+data analysis
+git
+github
+gitlab
+agile
+scrum
+ci/cd
+jenkins
+linux
+bash
