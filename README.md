@@ -1,1 +1,1 @@
-# AI--Resume-Analyzer-and-Job-Matcher-
+# AI-Resume Analyzer and Job Matcher
