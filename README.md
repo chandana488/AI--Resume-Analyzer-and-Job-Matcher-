@@ -129,4 +129,4 @@ Step 1: Install Required Packages
 pip install -r requirements.txt
 
 Step 2: Start locally Server at:
- http://127.0.0.1:8000
+ http://localhost:5173/
